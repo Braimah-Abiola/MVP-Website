@@ -252,7 +252,7 @@ button:focus {
           border-radius: 0px;
           box-shadow: none;
           margin: 0px;
-          background: #7eaae4; }
+          background: #727272; }
           @media (min-width: 992px) {
             .header_area .navbar .nav .nav-item.submenu ul {
               position: absolute;
@@ -316,7 +316,7 @@ button:focus {
     left: 0;
     right: 0; 
     opacity: 0.95;
-    background: #478ae2;
+    background: #202020;
     transform: translateY(70px);
     transition: transform 500ms ease, background 500ms ease;
     -webkit-transition: transform 500ms ease, background 500ms ease;
@@ -2609,7 +2609,7 @@ h6 {
   .testimonial_area .testimonial_logos {
     background: #fff;
     padding: 80px 50px;
-    box-shadow: 0px 20px 50px rgba(153, 153, 153, 0.2); }
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.288); }
     .testimonial_area .testimonial_logos img {
       cursor: pointer; }
     .testimonial_area .testimonial_logos .top_logos img:last-child {
@@ -2623,7 +2623,7 @@ h6 {
       .testimonial_area .testimonial_logos {
         display: none; } }
   .testimonial_area .active_testimonial .owl-dots {
-    background: #0077ff;
+    background: #535353;
     height: 25px;
     width: 100px;
     position: absolute;
@@ -2641,7 +2641,7 @@ h6 {
     .testimonial_area .active_testimonial .owl-dots .owl-dot {
       height: 15px;
       width: 15px;
-      background: #60a1eb;
+      background: #acacac;
       margin: 5px;
       border-radius: 50%;
       margin-top: 5px;
@@ -2687,7 +2687,7 @@ h6 {
 /* Start Newsletter Area css
 ============================================================================================ */
 .newsletter-area {
-  background-image: url(../img/newsletter-bg.png);
+  background-image: url(../img/newsletter-bg.JPG);
   background-size: cover;
  }
   .newsletter-area .main-title h1 {
@@ -2766,7 +2766,7 @@ h6 {
     margin-bottom: 23px; }
 
   .header_area .navbar {
-    background: #478ae2; }
+    background: #2c2c2c; }
 
   .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
     opacity: 1; }
@@ -2850,12 +2850,12 @@ h6 {
 /* Footer Area css
 ============================================================================================ */
 .footer_area {
-  background: #eccf4a; }
+  background: #222222; }
 
 .social_widget .f_title h4 {
   font-size: 21px;
   margin: 40px 0 20px;
-  color: #000; }
+  color: rgb(255, 255, 255); }
 .social_widget p {
   font-size: 14px;
   line-height: 24px;
@@ -2866,7 +2866,7 @@ h6 {
   margin-right: 40px;
   display: inline-block; }
   .social_widget .list li a {
-    color: #2e2e2e;
+    color: #ffffff;
     font-size: 28px;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
@@ -3108,7 +3108,167 @@ h6 {
  }
 
 .download-btn:hover{
-  background: #0077ffce;
+  background: #3b3b3b;
 }
 
 /*======================= End Download BluePill Btn =====================  */
+
+/* Thin Button Start */
+
+div[class*=box] {    
+  height: 10px;    
+  width: 100%;   
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 20px;  
+  justify-content: center;  
+  align-items: center;}
+
+.box-1 { background-color: #FF6766; }
+.box-2 { background-color: transparent; }
+.box-3 { background-color: #66A182; }
+
+.thin {    
+  line-height: 50px;    
+  height: 50px;    
+  text-align: center;   
+  width: 250px;    
+  cursor: pointer;}
+
+/* ========================BUTTON ONE========================*/
+.thin-one {    
+  color: rgb(0, 0, 0);    
+  transition: all 0.3s;    
+  position: relative;}
+
+.thin-one span {    
+  transition: all 0.3s;}
+
+.thin-one::before {    
+  content: '';    
+  position: absolute;    
+  bottom: 0;    
+  left: 0;    
+  width: 100%;    
+  height: 100%;    
+  z-index: 1;    
+  opacity: 0;    
+  transition: all 0.3s;    
+  border-top-width: 1px;    
+  border-bottom-width: 1px;    
+  border-top-style: solid;    
+  border-bottom-style: solid;    
+  border-top-color: rgba(0, 0, 0, 0.5);    
+  border-bottom-color: rgba(0, 0, 0, 0.5);    
+  transform: scale(0.1, 1);}
+
+.thin-one:hover span {    
+  letter-spacing: 2px;}
+
+.thin-one:hover::before {    
+  opacity: 1;     
+  transform: scale(1, 1); }
+
+.thin-one::after {    
+  content: '';    
+  position: absolute;    
+  bottom: 0;    
+  left: 0;    
+  width: 100%;    
+  height: 100%;    
+  z-index: 1;    
+  transition: all 0.3s;    
+  background-color: rgba(43, 43, 43, 0.726);}
+
+.thin-one:hover::after {    
+  opacity: 0;     
+  transform: scale(0.1, 1);}
+
+/* ========================BUTTON TWO========================*/
+
+.thin-two {    
+  font-size: 20px;
+  color: rgb(0, 0, 0);    
+  transition: all 0.5s;    
+  position: relative; }
+
+.thin-two span {    
+  z-index: 2;     
+  display: block;    
+  position: absolute;    
+  width: 100%;    
+  height: 100%;   }
+  
+.thin-two::before {    
+  content: '';    
+  position: absolute;    
+  top: 0;    
+  left: 0;    
+  width: 100%;    
+  height: 100%;    
+  z-index: 1;    
+  transition: all 0.5s;    
+  border: 1px solid rgba(65, 65, 65, 0.5);    
+  background-color: rgba(66, 66, 66, 0.5);}
+
+.thin-two::after {    
+  content: '';    
+  position: absolute;    
+  top: 0;    
+  left: 0;   
+  width: 100%;    
+  height: 100%;    
+  z-index: 1;    
+  transition: all 0.5s;    
+  border: 1px solid rgba(0, 0, 0, 0.5);    
+  background-color: rgba(0, 0, 0, 0.5);}
+  
+.thin-two:hover::before {  
+  transform: rotate(-45deg); 
+  background-color: rgba(0, 0, 0, 0.5);}
+
+.thin-two:hover::after {  
+  transform: rotate(45deg);  
+  background-color: rgba(0, 0, 0, 0.5);}
+
+/* ======================== BUTTON THREE========================*/
+.thin-three {    
+  color: rgb(0, 0, 0); 
+  font-size: 20px;   
+  transition: all 0.5s;    
+  position: relative;}
+
+.thin-three::before {    
+  content: '';    
+  position: absolute;    
+  top: 0;    
+  left: 0;    
+  width: 100%;    
+  height: 100%;    
+  z-index: 1;    
+  background-color: rgba(8, 8, 8, 0.644);    
+  transition: all 0.3s;}
+  
+.thin-three:hover::before {    
+  opacity: 0 ;    
+  transform: scale(0.5,0.5);}
+
+.thin-three::after {    
+  content: '';    
+  position: absolute;    
+  top: 0;    
+  left: 0;    
+  width: 100%;    
+  height: 100%;    
+  z-index: 1;    
+  opacity: 0;    
+  transition: all 0.3s;    
+  border: 1px solid rgba(32, 32, 32, 0.5);    
+  transform: scale(1.2,1.2);}
+  
+.thin-three:hover::after {    
+  opacity: 1;    
+  transform: scale(1,1);}
+
+
+/* Thin Button End */
