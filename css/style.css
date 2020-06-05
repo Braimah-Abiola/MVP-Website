@@ -314,9 +314,9 @@ button:focus {
     width: 100%;
     top: -70px;
     left: 0;
-    right: 0; /*porn #476ce4*/
-    opacity: 0.9;
-    background: #02b698;
+    right: 0; 
+    opacity: 0.95;
+    background: #478ae2;
     transform: translateY(70px);
     transition: transform 500ms ease, background 500ms ease;
     -webkit-transition: transform 500ms ease, background 500ms ease;
@@ -352,6 +352,9 @@ button:focus {
   background-repeat: no-repeat; }
 .banner-area .slide_bg1 {
   background: url(../img/banner/banner-bg1.jpg);
+ background-size: cover; }
+ .banner-area .slide_bg2 {
+  background: url(../img/banner/team-banner.jpg);
  background-size: cover; }
 
 
@@ -395,6 +398,8 @@ button:focus {
       .banner-content h3 {
         font-size: 20px; } }
 
+
+
 /* End Home Banner Area css
 ============================================================================================ */
 .banner_area {
@@ -406,7 +411,7 @@ button:focus {
     overflow: hidden;
     width: 100%;
     min-height: 400px;
-    background-image: url(../img/banner/common-banner.jpg);
+    background-image: url(../img/banner/common-banner.png);
     background-size: cover;
     z-index: 1; }
     .banner_area .banner_inner .banner_content h1 {
@@ -459,7 +464,7 @@ Contact Banner
     overflow: hidden;
     width: 100%;
     min-height: 400px;
-    background-image: url(../img/banner/contact-banner.JPG);
+    background-image: url(../img/banner/team-banner.jpg);
     background-size: cover;
     z-index: 1; }
     .banner_area2 .banner_inner .banner_content h1 {
@@ -498,6 +503,54 @@ Contact Banner
           .banner_area2 .banner_inner .banner_content .page_link a:last-child:before {
             display: none; }
 
+            .banner_area3 {
+              position: relative;
+              z-index: 1;
+              min-height: 400px; }
+              .banner_area3 .banner_inner {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                min-height: 400px;
+                background-image: url(../img/banner/contact-banner.jpg);
+                background-size: cover;
+                z-index: 1; }
+                .banner_area3 .banner_inner .banner_content h1 {
+                  color: #000;
+                  font-size: 60px;
+                  margin-bottom: 20px;
+                  text-transform: capitalize;
+                  font-weight: 700; }
+                .banner_area3 .banner_inner .banner_content .page_link {
+                  display: inline-block;
+                  border: 2px solid #000;
+                  border-radius: 50px;
+                  padding: 0px 20px;
+                  line-height: 46px; }
+                  .banner_area3 .banner_inner .banner_content .page_link a {
+                    font-size: 14px;
+                    color: #000;
+                    font-family: "Roboto", sans-serif;
+                    margin-right: 14px;
+                    position: relative; }
+                    .banner_area3 .banner_inner .banner_content .page_link a:before {
+                      position: absolute;
+                      content: "";
+                      height: 200%;
+                      width: 1px;
+                      right: -10px;
+                      top: 54%;
+                      background: #000;
+                      -webkit-transform: translateY(-50%);
+                      -moz-transform: translateY(-50%);
+                      -ms-transform: translateY(-50%);
+                      -o-transform: translateY(-50%);
+                      transform: translateY(-50%); }
+                    .banner_area3 .banner_inner .banner_content .page_link a:last-child {
+                      margin-right: 0px; }
+                      .banner_area3 .banner_inner .banner_content .page_link a:last-child:before {
+                        display: none; }
+          
 /* End Home Banner Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
@@ -582,7 +635,7 @@ Contact Banner
       text-transform: uppercase;
       cursor: pointer; }
       .projects_text h4:hover{
-        color: rgb(45, 86, 223);
+        color: rgb(187, 187, 187);
       }
     .projects_item .projects_text p {
       margin-bottom: 0px;
@@ -914,6 +967,19 @@ Contact Banner
       background: #476ce4;
       opacity: .9; }
 
+
+/* Home Categoires post */
+
+.categories_poster {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  padding-bottom: 15px; }
+  .categories_poster img {
+    max-width: 100%; }
+
+
+/* HC{ */
 /*============ blog_left_sidebar css ==============*/
 .blog_item {
   margin-bottom: 40px; }
@@ -1202,10 +1268,12 @@ Contact Banner
     position: absolute;
     left: 0;
     top: 0;
+    -webkit-animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
     font-size: 28px;
     line-height: 24px;
-    color: #eccf4a;
-    font-weight: 600; }
+    color: #476ce4;
+    font-weight: 1000; }
   .contact_info .info_item h6 {
     font-size: 16px;
     line-height: 24px;
@@ -2804,21 +2872,18 @@ h6 {
     -moz-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s; }
+    .social_widget .list li i{
+      -webkit-animation: pulse 2s infinite;
+      animation: pulse 2s infinite;
+    }
   .social_widget .list li:last-child {
     margin-right: 0px; }
   .social_widget .list li:hover a {
-    color: #e45447; }
+    color: #2061ec; }
 
 /* End Footer Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
-
-/* 
-Loader
-*/
-/* #bith{
-  color: #0077ff;
-} */
 #ftco-loader {
   position: fixed;
   width: 96px;
@@ -2909,3 +2974,141 @@ Loader
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+    .mouse {
+      position: absolute;
+      z-index: 2; }
+    
+    .mouse-icon {
+      height: 80px;
+      border: 1px solid transparent;
+      background: transparent;
+      cursor: pointer;
+      position: relative;
+      text-align: center;
+      margin: 0 auto;
+      display: block; }
+      
+    
+      .mouse-wheel {
+      height: 80px;
+      margin: 0 auto 0;
+      display: block;
+      width: 30px;
+      background: transparent;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      -webkit-animation: 1.6s ease infinite wheel-up-down;
+      -moz-animation: 1.6s ease infinite wheel-up-down;
+      animation: 1.6s ease infinite wheel-up-down;
+      }
+
+      .mouse-wheel2 {
+        height: 80px;
+        margin-left: 90%;
+        display: block;
+        width: 30px;
+        background: transparent;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-animation: 1.6s ease infinite wheel-up-down;
+        -moz-animation: 1.6s ease infinite wheel-up-down;
+        animation: 1.6s ease infinite wheel-up-down;
+        }
+    
+    @-webkit-keyframes wheel-up-down {
+      100% {
+        margin-top: 34px;
+        opacity: 1; }
+      30% {
+        opacity: 1; }
+      0% {
+        margin-top: 2px;
+        opacity: 0; } }
+    
+    @-moz-keyframes wheel-up-down {
+      100% {
+        margin-top: 34px;
+        opacity: 1; }
+      30% {
+        opacity: 1; }
+      0% {
+        margin-top: 2px;
+        opacity: 0; } }
+    
+    @keyframes wheel-up-down {
+      100% {
+        margin-top: 34px;
+        opacity: 1; }
+      30% {
+        opacity: 1; }
+      0% {
+        margin-top: 2px;
+        opacity: 0; } }
+
+/*======================= Subscribe Btns =====================  */
+.subscribe-btn {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  background: red;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 550;
+  line-height: 46px;
+  padding: 0 40px;
+  outline: none !important;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s; }
+  .subscribe-btn:hover {
+    background: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid red; }
+
+/*======================= End Subscribe Btns =====================  */
+
+
+
+/*======================= Download BluePill Btn =====================  */
+
+.download-btn{
+  display: inline-block;
+  background: rgb(0, 0, 0);
+  font-family: "Roboto", sans-serif;
+  outline: none !important;  
+  width: 200px;
+  height: 80px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.download-btn i {
+ padding: 10px 20px 0px 20px;
+ font-size: 50px;
+ color: white;
+}
+
+.download-btn p {
+  padding: 0px 50px 40px 80px;
+  margin-top: -45px;
+  font-size: 18px;
+  color: white;
+ }
+
+.download-btn:hover{
+  background: #0077ffce;
+}
+
+/*======================= End Download BluePill Btn =====================  */
