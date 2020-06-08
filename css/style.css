@@ -113,7 +113,7 @@ button:focus {
       height: 2px;
       width: 100px;
       content: "";
-      background: #476ce4;
+      background: gray;
       margin-left: -50px; }
       @media (max-width: 767px) {
         .main-title h1:before {
@@ -125,7 +125,7 @@ button:focus {
       height: 10px;
       width: 10px;
       content: "";
-      background: #476ce4;
+      background: gray;
       margin-left: -5px;
       border-radius: 50%; }
       @media (max-width: 767px) {
@@ -165,7 +165,7 @@ button:focus {
           height: 2px;
           width: 100px;
           content: "";
-          background: #476ce4;
+          background: #777777;
           margin-left: -50px; }
           @media (max-width: 767px) {
             .sub-title h1:before {
@@ -177,7 +177,7 @@ button:focus {
           height: 10px;
           width: 10px;
           content: "";
-          background: #476ce4;
+          background: #777777;
           margin-left: -5px;
           border-radius: 50%; }
           @media (max-width: 767px) {
@@ -236,14 +236,14 @@ button:focus {
       .header_area .navbar .nav .nav-item .nav-link {
         font: 500 12px/100px "Roboto", sans-serif;
         text-transform: capitalize;
-        color: #000;
+        color: black;
         padding: 0px;
         display: inline-block;
         font-size: 16px; }
         .header_area .navbar .nav .nav-item .nav-link:after {
           display: none; }
       .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
-        color: #ffffff; }
+        color: white; }
       .header_area .navbar .nav .nav-item.submenu {
         position: relative; }
         .header_area .navbar .nav .nav-item.submenu ul {
@@ -315,8 +315,8 @@ button:focus {
     top: -70px;
     left: 0;
     right: 0; 
-    opacity: 0.95;
-    background: #202020;
+    opacity: 1;
+    background: rgb(53, 53, 53);
     transform: translateY(70px);
     transition: transform 500ms ease, background 500ms ease;
     -webkit-transition: transform 500ms ease, background 500ms ease;
@@ -649,7 +649,7 @@ Contact Banner
     bottom: 30px; }
   .projects_item .projects_text a {
     color: #fff;
-    font-size: 30px; }
+    font-size: 50px; }
   .projects_text a:hover  {
       visibility: visible;
       color: red; }
@@ -2765,7 +2765,7 @@ h6 {
     margin-bottom: 23px; }
 
   .header_area .navbar {
-    background: #2c2c2c; }
+    background: rgb(53, 53, 53); }
 
   .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
     opacity: 1; }
@@ -2849,7 +2849,7 @@ h6 {
 /* Footer Area css
 ============================================================================================ */
 .footer_area {
-  background: #222222; }
+  background: rgb(53, 53, 53); }
 
 .social_widget .f_title h4 {
   font-size: 21px;
@@ -2871,10 +2871,6 @@ h6 {
     -moz-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s; }
-    .social_widget .list li i{
-      -webkit-animation: pulse 2s infinite;
-      animation: pulse 2s infinite;
-    }
   .social_widget .list li:last-child {
     margin-right: 0px; }
   .social_widget .list li:hover a {
@@ -3185,7 +3181,7 @@ div[class*=box] {
   height: 100%;    
   z-index: 1;    
   transition: all 0.3s;    
-  background-color: rgba(43, 43, 43, 0.726);}
+  background-color: rgba(56, 56, 56, 0.726);}
 
 .thin-one:hover::after {    
   opacity: 0;     
@@ -3253,7 +3249,7 @@ div[class*=box] {
   width: 100%;    
   height: 100%;    
   z-index: 1;    
-  background-color: rgba(8, 8, 8, 0.644);    
+  background-color: rgba(80, 80, 80, 0.356);    
   transition: all 0.3s;}
   
 .thin-three:hover::before {    
@@ -3283,4 +3279,5 @@ div[class*=box] {
 .languages{
   width: 200px;
   height: 200px;
+  margin-bottom: 20px;
 }
